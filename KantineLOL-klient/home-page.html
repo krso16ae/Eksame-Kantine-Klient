@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="lib/css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <meta charset="UTF-8">
+    <title>CBS -- Kantine app</title>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="row" id="nav-container"></div>
+
+    <div class="row">
+        <div class="col-lg-22">
+            <div class="page-header"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-10 profile-info"></div>
+        <div class="col-lg-22">
+
+            <h3>Orders</h3>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>vare</th>
+                    <th>Total</th>
+                </tr>
+                </thead>
+                <tbody id="basket-tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="lib/js/jquery-3.2.1.js"></script>
+<script src="lib/js/bootstrap.js"></script>
+<script src="js/sdk.js"></script>
+<script src="js/home-page.js"></script>
+
+<script>
+    SDK.User.loadNav();
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="lib/css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <meta charset="UTF-8">
+    <title>CBS -- Kantine app</title>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="row" id="nav-container"></div>
+
+    <div class="row" id="order-alert-container">
+        <div class="col-lg-12">
+            <div class="alert alert-success" role="alert" style="display: none">
+                <strong>Din ordre er gået igennem</strong>
+            </div>
+        </div>
+    </div>
+
+    <div id="checkout-table-container">
+        <div class="row">
+            <div class="col-lg-22">
+
+                <div class="page-header">
+                    <h1>I din kurv</h1>
+                </div>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Varenavn</th>
+                        <th>Mængde</th>
+                        <th>Pris</th>
+                        <th>Total</th>
+                    </tr>
+                    </thead>
+                    <tbody id="basket-tbody">
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-offset-6 text-right" id="checkout-actions">
+                <button class="btn btn-default btn-lg" id="clear-button">Tøm kurv</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="the-basket-is-empty-container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Du har ikke valgt nogen vare endnu</h2>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<script src="lib/js/jquery-3.2.1.js"></script>
+<script src="lib/js/bootstrap.js"></script>
+<script src="js/sdk.js"></script>
+<script src="js/basket.js"></script>
+
+<script>
+    SDK.User.loadNav();
+</script>
+
+
+</body>
+</html>
